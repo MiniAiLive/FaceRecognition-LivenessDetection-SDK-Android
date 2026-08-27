@@ -41,121 +41,92 @@ Feel free to [Contact US](https://www.miniai.live/contact/) to get a trial Licen
    </table>
 </div>
 
-## SDK License
+<div align="center">
+   <h1>Face Recognition Android SDK</h1>
+   <img src=https://miniai.live/wp-content/uploads/2024/02/logo_name-1-768x426-1.png alt="MiniAiLive Logo"
+   width="300">
+</div>
 
-Please replace the our license key with your license key on the MainActivity.kt.
-```
-        var ret = FaceSDK.setActivation(
-            "dYSREvlnlNxuMwFlDCngsmkG5rFIck95ymNvkPDeTUXt3Cj7y0sFIoYIuv3rXaeCb6Imf7lbr7r09S" + 
-                "sAPPPhL6oD1uCsdRqddQcMjzHThgjLBXjphSMnclb8SM8mzs/brmMZ+Ofu2p7nqKIy7zJASB3iRo2L5gy7e" + 
-                "hNvKUy4bSyt7n7xCz8PrGWmBnphupYbQJLGU24RdVN1suybukqjZX5ctUUu2sDSd2CawEDH7ftLyoLuFrG1v" + 
-                "YqExNq/FOhgBjzHgSmZ1tiZa+35rrU6kyzUG6O9Nl8A+Wr/lsV2QDjqn7iGgPmzimGL2pr7OLXJRUkOOWldW" + 
-                "detUeqohaI9eA=="
-        )
-```
-## About SDK
+## Welcome to the [MiniAiLive](https://www.miniai.live/)!
+We provide system integrators with fast, flexible and extremely precise facial recognition with 3D passive face liveness detection (face anti-spoofing) that can be deployed across a number of scenarios, including security, access control, public safety, fintech, smart retail and home protection.
+Feel free to use our MiniAI Face Recognition Android SDK.
 
-### 1. Set up
-1. Copy the SDK (`libfacesdk` folder) to the `root` folder in your project.
+> **Note**
+>
+> SDK is fully on-premise, processing all happens on hosting server and no data leaves server.
 
-2. Add SDK to the project in `settings.gradle`.
-```bash
-include ':libfacesdk'
-```
+## FaceRecognition APK
+<a href="https://play.google.com/store/apps/details?id=com.miniai.facerecognition&hl=en-HK" target="_blank">
+  <img alt="" src="https://user-images.githubusercontent.com/125717930/230804673-17c99e7d-6a21-4a64-8b9e-a465142da148.png" height=80/>
+</a>
 
-3. Add dependency to your `build.gradle`.
-```bash
-implementation project(path: ':libfacesdk')
-```
+<br>
 
-### 2. Initializing an SDK
+https://github.com/MiniAiLive/MiniAI-Face-Recognition-AndroidSDK/assets/153516004/85a939ed-a607-478b-b48a-80b8582c37b6
 
-- Step One
+## Request license
+Feel free to [Contact US](https://www.miniai.live/contact/)  to get a trial License.
 
-To begin, you need to activate the SDK using the license that you have received.
-```kotlin
-FaceSDK.setActivation("...")
-```
-
-If activation is successful, the return value will be `SDK_SUCCESS`. Otherwise, an error value will be returned.
-
-- Step Two
-
-After activation, call the `SDK`'s initialization function.
-```kotlin
-FaceSDK.init(getAssets());
-```
-If initialization is successful, the return value will be `SDK_SUCCESS`. Otherwise, an error value will be returned.
-
-### 3. SDK Classes
-  - FaceDetectionParam
-  
-    This class serves as the input parameter for face detection, allowing the inclusion of face liveness detection and specifying the desired liveness detection level.
-
-    | Feature| Type | Name |
-    |------------------|------------------|------------------|
-    | Check liveness        | boolean    | check_liveness |
-    | Check liveness level        | int    | check_liveness_level |
-
-    When check_liveness_level is set to `0`, the liveness detection achieves high accuracy.
-    When check_liveness_level is set to `1`, the liveness detection operates with light weight.
-
-### 4. APIs
-#### - Face Detection and Liveness Detection
-
-The `FaceSDK` offers a single function for detecting faces, allowing the inclusion of face liveness detection and specifying the desired liveness detection level.
-```kotlin
-FaceSDK.faceDetection(bitmap, param)
+## Contributing
+Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
+```java 
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them with descriptive messages.
+4. Push your changes to your forked repository.
+5. Submit a pull request to the original repository.
 ```
 
-This function requires two parameters: a `Bitmap` object and a `FaceDetectionParam` object that enables various processing functionalities.
+## Face & IDSDK Online Demo, Resources
+<div style="display: flex; justify-content: center; align-items: center;"> 
+   <table style="text-align: center;">
+      <tr>
+         <td style="text-align: center; vertical-align: middle;"><a href="https://github.com/MiniAiLive"><img src="https://miniai.live/wp-content/uploads/2024/10/new_git-1-300x67.png" style="height: 60px; margin-right: 5px;" title="GITHUB"/></a></td> 
+         <td style="text-align: center; vertical-align: middle;"><a href="https://huggingface.co/MiniAiLive"><img src="https://miniai.live/wp-content/uploads/2024/10/new_hugging-1-300x67.png" style="height: 60px; margin-right: 5px;" title="HuggingFace"/></a></td> 
+         <td style="text-align: center; vertical-align: middle;"><a href="https://demo.miniai.live"><img src="https://miniai.live/wp-content/uploads/2024/10/new_gradio-300x67.png" style="height: 60px; margin-right: 5px;" title="Gradio"/></a></td> 
+      </tr> 
+      <tr>
+         <td style="text-align: center; vertical-align: middle;"><a href="https://docs.miniai.live/"><img src="https://miniai.live/wp-content/uploads/2024/10/a-300x70.png" style="height: 60px; margin-right: 5px;" title="Documentation"/></a></td> 
+         <td style="text-align: center; vertical-align: middle;"><a href="https://www.youtube.com/@miniailive"><img src="https://miniai.live/wp-content/uploads/2024/10/Untitled-1-300x70.png" style="height: 60px; margin-right: 5px;" title="Youtube"/></a></td> 
+         <td style="text-align: center; vertical-align: middle;"><a href="https://play.google.com/store/apps/dev?id=5831076207730531667"><img src="https://miniai.live/wp-content/uploads/2024/10/googleplay-300x62.png" style="height: 60px; margin-right: 5px;" title="Google Play"/></a></td>
+      </tr>
+   </table>
+</div>
 
-The return value of the function is a list of `FaceBox` objects. Each `FaceBox` object contains the detected face rectangle, liveness score, and facial angles such as `yaw`, `roll`, and `pitch`.
+## Our Products
+No | Project | Feature
+---|---|---|
+1 | [FaceRecognition-Linux](https://github.com/MiniAiLive/FaceRecognition-Linux) | 1:1 & 1:N Face Matching
+2 | [FaceRecognition-Windows](https://github.com/MiniAiLive/FaceRecognition-Windows) | 1:1 & 1:N Face Matching
+3 | [FaceRecognition-Docker](https://github.com/MiniAiLive/FaceRecognition-Docker) | 1:1 & 1:N Face Matching
+4 | [FaceRecognition-Android](https://github.com/MiniAiLive/FaceRecognition-Android) | 1:1 & 1:N Face Matching, 2D & 3D Face Passive LivenessDetection
+5 | [FaceRecognition-LivenessDetection-Windows](https://github.com/MiniAiLive/FaceRecognition-LivenessDetection-Windows) | 1:1 & 1:N Face Matching, 2D & 3D Face Passive LivenessDetection
+6 | [FaceLivenessDetection-Linux](https://github.com/MiniAiLive/FaceLivenessDetection-Linux) | 2D & 3D Face Passive LivenessDetection
+7 | [FaceLivenessDetection-Windows](https://github.com/MiniAiLive/FaceLivenessDetection-Windows) | 2D & 3D Face Passive LivenessDetection
+8 | [FaceLivenessDetection-Docker](https://github.com/MiniAiLive/FaceLivenessDetection-Docker) | 2D & 3D Face Passive LivenessDetection
+9 | [FaceLivenessDetection-Android](https://github.com/MiniAiLive/FaceLivenessDetection-Android) | 2D & 3D Face Passive LivenessDetection
+10 | [FaceMatching-Android](https://github.com/MiniAiLive/FaceMatching-Android) | 1:1 Face Matching
+11 | [FaceMatching-Windows-Demo](https://github.com/MiniAiLive/FaceMatching-Windows) | 1:1 Face Matching
+12 | [FaceAttributes-Android](https://github.com/MiniAiLive/FaceAttributes-Android) | Face Attributes, Age & Gender Estimation
+13 | [ID-DocumentRecognition-Linux](https://github.com/MiniAiLive/ID-DocumentRecognition-Linux) | IDCard, Passport, Driver License, Credit, MRZ Recognition
+14 | [ID-DocumentRecognition-Windows](https://github.com/MiniAiLive/ID-DocumentRecognition-Windows) | IDCard, Passport, Driver License, Credit, MRZ Recognition
+15 | [ID-DocumentRecognition-Docker](https://github.com/MiniAiLive/ID-DocumentRecognition-Docker) | IDCard, Passport, Driver License, Credit, MRZ Recognition
+16 | [ID-DocumentRecognition-Android](https://github.com/MiniAiLive/ID-DocumentRecognition-Android) | IDCard, Passport, Driver License, Credit, MRZ Recognition
+17 | [ID-DocumentLivenessDetection-Linux](https://github.com/MiniAiLive/ID-DocumentLivenessDetection-Linux) | ID Document LivenessDetection
+18 | [ID-DocumentLivenessDetection-Windows](https://github.com/MiniAiLive/ID-DocumentLivenessDetection-Windows) | ID Document LivenessDetection
+19 | [ID-DocumentLivenessDetection-Docker](https://github.com/MiniAiLive/ID-DocumentLivenessDetection-Docker) | ID Document LivenessDetection
 
+## About MiniAiLive
+[MiniAiLive](https://www.miniai.live/) is a leading AI solutions company specializing in computer vision and machine learning technologies. We provide cutting-edge solutions for various industries, leveraging the power of AI to drive innovation and efficiency.
 
-#### - Create Templates
+## Contact US
+For any inquiries or questions, please [Contact US](https://www.miniai.live/contact/)
 
-The `FaceSDK` provides a function that can generate a `template` from a `Bitmap` image. This `template` can then be used to verify the identity of the individual image captured.
-
-```kotlin
-byte[] templates = FaceSDK.templateExtraction(bitmap, faceBox);
-```
-
-The `SDK`'s `template` extraction function takes two parameters: a `Bitmap` object and an object of `FaceBox`. 
-
-The function returns a byte array, which contains the `template` that can be used for person verification.
-
-#### - Calculation similarity
-
-The `similarityCalculation` function takes a byte array of two `template`s as a parameter. 
-
-```kotlin
-float similarity = FaceSDK.similarityCalculation(templates1, templates1);
-```
-
-It returns the similarity value between the two `template`s, which can be used to determine the level of likeness between the two individuals.
-
-#### - Yuv to Bitmap
-The `SDK` provides a function called `yuv2Bitmap`, which converts a `yuv` frame to a `Bitmap`. Since camera frames are typically in `yuv` format, this function is necessary to convert them to `Bitmap`. The usage of this function is as follows:
-```kotlin
-Bitmap bitmap = FaceSDK.yuv2Bitmap(nv21, image.getWidth(), image.getHeight(), 7);
-```
-The first parameter is an `nv21` byte array containing the `yuv` data. 
-
-The second parameter is the width of the `yuv` frame, and the third parameter is its height. 
-
-The fourth parameter is the `conversion mode`, which is determined by the camera orientation.
-
-To determine the appropriate `conversion mode`, the following method can be used:
-```kotlin
- 1        2       3      4         5            6           7          8
-
- 888888  888888      88  88      8888888888  88                  88  8888888888
- 88          88      88  88      88  88      88  88          88  88      88  88
- 8888      8888    8888  8888    88          8888888888  8888888888          88
- 88          88      88  88
- 88          88  888888  888888
-```
+<p align="center">
+<a target="_blank" href="https://t.me/Contact_MiniAiLive"><img src="https://img.shields.io/badge/telegram-@MiniAiLive-blue.svg?logo=telegram" alt="www.miniai.live"></a>&emsp;
+<a target="_blank" href="https://wa.me/+19162702374"><img src="https://img.shields.io/badge/whatsapp-MiniAiLive-blue.svg?logo=whatsapp" alt="www.miniai.live"></a>&emsp;
+<a target="_blank" href="https://join.skype.com/invite/ltQEVDmVddTe"><img src="https://img.shields.io/badge/skype-MiniAiLive-blue.svg?logo=skype" alt="www.miniai.live"></a>&emsp;
+</p>
 
 ## Our Products
 

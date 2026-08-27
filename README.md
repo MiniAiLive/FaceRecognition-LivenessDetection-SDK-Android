@@ -24,10 +24,6 @@ https://github.com/MiniAiLive/MiniAI-Face-Recognition-AndroidSDK/assets/15351600
 ## Request license
 Feel free to [Contact US](https://www.miniai.live/contact/) to get a trial License. We are 24/7 online on [WhatsApp](https://wa.me/+19162702374).
 
-## Welcome to the [MiniAiLive](https://www.miniai.live/)!
-We provide system integrators with fast, flexible and extremely precise facial recognition with 3D passive face liveness detection (face anti-spoofing) that can be deployed across a number of scenarios, including security, access control, public safety, fintech, smart retail and home protection.
-Feel free to use our MiniAI Face Recognition Android SDK.
-
 > **Note**
 >
 > SDK is fully on-premise, processing all happens on hosting server and no data leaves server.

@@ -28,14 +28,7 @@ Feel free to [Contact US](https://www.miniai.live/contact/) to get a trial Licen
 >
 > SDK is fully on-premise, processing all happens on hosting server and no data leaves server.
 
-## FaceRecognition APK
-<a href="https://play.google.com/store/apps/details?id=com.miniai.facerecognition&hl=en-HK" target="_blank">
-  <img alt="" src="https://user-images.githubusercontent.com/125717930/230804673-17c99e7d-6a21-4a64-8b9e-a465142da148.png" height=80/>
-</a>
-
 <br>
-
-https://github.com/MiniAiLive/MiniAI-Face-Recognition-AndroidSDK/assets/153516004/85a939ed-a607-478b-b48a-80b8582c37b6
 
 ## Request license
 Feel free to [Contact US](https://www.miniai.live/contact/)  to get a trial License.
